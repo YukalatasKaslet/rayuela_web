@@ -47,8 +47,8 @@ button:hover {
 
 /* Código añadido por codea */
 .table td {
-  background-color: red;
-  height: 20px;
+  background-color: white;
+  height: 35px;
   width: 20px;
 }
 
@@ -57,3 +57,41 @@ button:hover {
 }
 
 /* Código Lau */
+
+.table tr{
+  border: #CCCCCC 3px solid;
+}
+
+#player1, #player2 {
+  width: 12%;
+  text-align: center;
+  /*vertical-align: middle;*/
+}
+
+
+.table td.active-meta {
+  background-color: #0000FF;
+}
+
+/*
+.table td.prueba {
+  background-color: #FF0960;
+}
+
+.table td.prueba2 {
+  background-color: #FF7960;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
