@@ -18,12 +18,19 @@
   <title></title>
 </head>
 <body>
-  <header>
-    <img src="img/codea-logo.png" id="logo">
-  </header>
-  <h1 id="main-title">¡RAYUELA Lau, be happy :3!</h1>
-  <br>
+
   <div class="container">
+    <header>
+      <img src="img/codea-logo.png" id="logo">
+    </header>
+    <% if current_user %>
+      <a href="/logout">Logout</a>
+    <% else %>
+      <a href="/login">Login</a> | <a href="/signup">Signup</a>
+    <%end%>
+    <br>
+    <h1 id="main-title">¡RAYUELA Lau, be happy :3!</h1>
+    <br>
     <%= yield %>
   </div>
 </body>
