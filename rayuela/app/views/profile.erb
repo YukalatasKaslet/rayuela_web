@@ -3,9 +3,9 @@
       Usuario:<%= @user.name %><br>
      
       Scores:
-      <% if @user.scores != nil %>
+      <% if @user.games != nil %>
         <ul>
-          <% @user.scores.each do |s| %>
+          <% @user.games.each do |s| %>
             <li><%= s.score %></li><br>
           <% end %>
         </ul>

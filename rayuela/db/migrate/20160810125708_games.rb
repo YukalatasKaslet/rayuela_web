@@ -12,8 +12,8 @@ class Games < ActiveRecord::Migration
     end
 
     create_table :user_games do |t|
-      t.string      :names
-      t.integer     :scores
+      t.string      :name
+      t.integer     :score
       t.integer     :user_id
       t.integer     :game_id
     end
