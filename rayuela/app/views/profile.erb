@@ -1,0 +1,21 @@
+
+  <p>
+      Usuario:<%= @user.name %><br>
+     
+      Scores:
+      <% if @user.scores != nil %>
+        <ul>
+          <% @user.scores.each do |s| %>
+            <li><%= s.score %></li><br>
+          <% end %>
+        </ul>
+      <% else %>
+        Comienza a Jugar! :D
+      <% end %>
+  </p>
+
+  <div>
+    <form action="/new_game" method="Post">
+      <input type="submit" value="Nuevo Juego!">
+    </form>
+  </div>
