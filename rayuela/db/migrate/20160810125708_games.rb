@@ -7,10 +7,13 @@ class Games < ActiveRecord::Migration
 
     create_table :games do |t|
       t.string  :winner
+      t.integer :score
       t.string  :status
     end
 
     create_table :user_games do |t|
+      t.string      :names
+      t.integer     :scores
       t.integer     :user_id
       t.integer     :game_id
     end
