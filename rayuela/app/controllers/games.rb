@@ -5,5 +5,5 @@ end
 
 #GET /photos photos#index  display_a_list_of_all_photos
 get '/game/new' do
-
+  erb :game
 end
